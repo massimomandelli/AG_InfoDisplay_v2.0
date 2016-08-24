@@ -35,7 +35,6 @@
         Me.Baia_3 = New AG_InfoDisplay.UC_Baia()
         Me.Baia_2 = New AG_InfoDisplay.UC_Baia()
         Me.Baia_1 = New AG_InfoDisplay.UC_Baia()
-        Me.Label1 = New System.Windows.Forms.Label()
         CType(Me.PanelControl1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.PanelControl1.SuspendLayout()
         Me.SuspendLayout()
@@ -46,7 +45,6 @@
         '
         'PanelControl1
         '
-        Me.PanelControl1.Controls.Add(Me.Label1)
         Me.PanelControl1.Controls.Add(Me.lblData)
         Me.PanelControl1.Controls.Add(Me.lblTitle)
         Me.PanelControl1.Dock = System.Windows.Forms.DockStyle.Top
@@ -59,10 +57,10 @@
         '
         Me.lblData.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.lblData.AutoSize = True
-        Me.lblData.Font = New System.Drawing.Font("Tahoma", 36.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblData.Location = New System.Drawing.Point(1474, 19)
+        Me.lblData.Font = New System.Drawing.Font("Tahoma", 48.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblData.Location = New System.Drawing.Point(1328, 9)
         Me.lblData.Name = "lblData"
-        Me.lblData.Size = New System.Drawing.Size(405, 58)
+        Me.lblData.Size = New System.Drawing.Size(544, 77)
         Me.lblData.TabIndex = 1
         Me.lblData.Text = "00:00 00/00/0000"
         '
@@ -252,16 +250,6 @@
         Me.Baia_1.ValuePerc = New Decimal(New Integer() {0, 0, 0, 0})
         Me.Baia_1.Weight = New Decimal(New Integer() {0, 0, 0, 0})
         '
-        'Label1
-        '
-        Me.Label1.AutoSize = True
-        Me.Label1.Font = New System.Drawing.Font("Tahoma", 20.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label1.Location = New System.Drawing.Point(23, 67)
-        Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(47, 33)
-        Me.Label1.TabIndex = 2
-        Me.Label1.Text = "...."
-        '
         'frmDisplay
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -299,7 +287,6 @@
     Friend WithEvents Baia_8 As UC_Baia
     Friend WithEvents lblData As Label
     Friend WithEvents lblTitle As Label
-    Friend WithEvents Label1 As Label
 
 #End Region
 

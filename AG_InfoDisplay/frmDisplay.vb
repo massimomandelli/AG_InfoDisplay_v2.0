@@ -86,7 +86,7 @@ Partial Public Class frmDisplay
 
 
     Dim mytext As String = "corsia uno libera"
-    Dim f_Synth_available As Boolean = False
+
     Private Sub test()
         '   recognizer.LoadGrammar(gram)
         '  recognizer.SetInputToDefaultAudioDevice()
@@ -110,10 +110,8 @@ Partial Public Class frmDisplay
             synth.Speak("bedge 45 targa AZ1234TR pronto per caricare alla corsia 8")
             synth.Rate = 0
             synth.Speak("marco, muovi il culo")
-            f_Synth_available = True
         Catch ex As Exception
             MsgBox("Error in Synth system: " + ex.Message)
-            f_Synth_available = False
 
         End Try
 
@@ -178,10 +176,6 @@ Partial Public Class frmDisplay
     End Sub
 
     Private Sub PanelControl1_Paint(sender As Object, e As PaintEventArgs) Handles PanelControl1.Paint
-
-    End Sub
-
-    Private Sub Label1_Click(sender As Object, e As EventArgs) Handles Label1.Click
 
     End Sub
 End Class
