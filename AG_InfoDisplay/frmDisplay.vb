@@ -114,6 +114,7 @@ Partial Public Class frmDisplay
         Catch ex As Exception
             MsgBox("Error in Synth system: " + ex.Message)
             f_synthAvailable = False
+            ' ok
         End Try
 
 
