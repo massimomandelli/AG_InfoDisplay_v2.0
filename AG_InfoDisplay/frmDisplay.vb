@@ -86,7 +86,7 @@ Partial Public Class frmDisplay
 
 
     Dim mytext As String = "corsia uno libera"
-
+    Dim f_synthAvailable As Boolean = False
     Private Sub test()
         '   recognizer.LoadGrammar(gram)
         '  recognizer.SetInputToDefaultAudioDevice()
@@ -110,9 +110,10 @@ Partial Public Class frmDisplay
             synth.Speak("bedge 45 targa AZ1234TR pronto per caricare alla corsia 8")
             synth.Rate = 0
             synth.Speak("marco, muovi il culo")
+            f_synthAvailable = True
         Catch ex As Exception
             MsgBox("Error in Synth system: " + ex.Message)
-
+            f_synthAvailable = False
         End Try
 
 
