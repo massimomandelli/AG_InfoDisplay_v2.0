@@ -25,6 +25,8 @@
         Me.components = New System.ComponentModel.Container()
         Me.Timer1 = New System.Windows.Forms.Timer(Me.components)
         Me.PanelControl1 = New DevExpress.XtraEditors.PanelControl()
+        Me.lblData = New System.Windows.Forms.Label()
+        Me.lblTitle = New System.Windows.Forms.Label()
         Me.Baia_8 = New AG_InfoDisplay.UC_Baia()
         Me.Baia_7 = New AG_InfoDisplay.UC_Baia()
         Me.Baia_6 = New AG_InfoDisplay.UC_Baia()
@@ -33,8 +35,7 @@
         Me.Baia_3 = New AG_InfoDisplay.UC_Baia()
         Me.Baia_2 = New AG_InfoDisplay.UC_Baia()
         Me.Baia_1 = New AG_InfoDisplay.UC_Baia()
-        Me.lblTitle = New System.Windows.Forms.Label()
-        Me.lblData = New System.Windows.Forms.Label()
+        Me.Label1 = New System.Windows.Forms.Label()
         CType(Me.PanelControl1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.PanelControl1.SuspendLayout()
         Me.SuspendLayout()
@@ -45,6 +46,7 @@
         '
         'PanelControl1
         '
+        Me.PanelControl1.Controls.Add(Me.Label1)
         Me.PanelControl1.Controls.Add(Me.lblData)
         Me.PanelControl1.Controls.Add(Me.lblTitle)
         Me.PanelControl1.Dock = System.Windows.Forms.DockStyle.Top
@@ -52,6 +54,27 @@
         Me.PanelControl1.Name = "PanelControl1"
         Me.PanelControl1.Size = New System.Drawing.Size(1884, 125)
         Me.PanelControl1.TabIndex = 0
+        '
+        'lblData
+        '
+        Me.lblData.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.lblData.AutoSize = True
+        Me.lblData.Font = New System.Drawing.Font("Tahoma", 36.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblData.Location = New System.Drawing.Point(1474, 19)
+        Me.lblData.Name = "lblData"
+        Me.lblData.Size = New System.Drawing.Size(405, 58)
+        Me.lblData.TabIndex = 1
+        Me.lblData.Text = "00:00 00/00/0000"
+        '
+        'lblTitle
+        '
+        Me.lblTitle.AutoSize = True
+        Me.lblTitle.Font = New System.Drawing.Font("Tahoma", 36.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblTitle.Location = New System.Drawing.Point(12, 9)
+        Me.lblTitle.Name = "lblTitle"
+        Me.lblTitle.Size = New System.Drawing.Size(658, 58)
+        Me.lblTitle.TabIndex = 0
+        Me.lblTitle.Text = "Monitor sala attesa autisti"
         '
         'Baia_8
         '
@@ -229,26 +252,15 @@
         Me.Baia_1.ValuePerc = New Decimal(New Integer() {0, 0, 0, 0})
         Me.Baia_1.Weight = New Decimal(New Integer() {0, 0, 0, 0})
         '
-        'lblTitle
+        'Label1
         '
-        Me.lblTitle.AutoSize = True
-        Me.lblTitle.Font = New System.Drawing.Font("Tahoma", 36.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblTitle.Location = New System.Drawing.Point(12, 9)
-        Me.lblTitle.Name = "lblTitle"
-        Me.lblTitle.Size = New System.Drawing.Size(658, 58)
-        Me.lblTitle.TabIndex = 0
-        Me.lblTitle.Text = "Monitor sala attesa autisti"
-        '
-        'lblData
-        '
-        Me.lblData.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.lblData.AutoSize = True
-        Me.lblData.Font = New System.Drawing.Font("Tahoma", 36.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblData.Location = New System.Drawing.Point(1474, 19)
-        Me.lblData.Name = "lblData"
-        Me.lblData.Size = New System.Drawing.Size(405, 58)
-        Me.lblData.TabIndex = 1
-        Me.lblData.Text = "00:00 00/00/0000"
+        Me.Label1.AutoSize = True
+        Me.Label1.Font = New System.Drawing.Font("Tahoma", 20.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label1.Location = New System.Drawing.Point(23, 67)
+        Me.Label1.Name = "Label1"
+        Me.Label1.Size = New System.Drawing.Size(47, 33)
+        Me.Label1.TabIndex = 2
+        Me.Label1.Text = "...."
         '
         'frmDisplay
         '
@@ -287,6 +299,7 @@
     Friend WithEvents Baia_8 As UC_Baia
     Friend WithEvents lblData As Label
     Friend WithEvents lblTitle As Label
+    Friend WithEvents Label1 As Label
 
 #End Region
 
